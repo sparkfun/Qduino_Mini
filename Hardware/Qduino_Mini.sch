@@ -14598,10 +14598,10 @@ IC-09995</description>
 <attribute name="PROD_ID" value="RES-00818"/>
 </part>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7uF">
-<attribute name="PROD_ID" value="CAP-10300"/>
+<attribute name="PROD_ID" value="CAP-08280"/>
 </part>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="4.7uF">
-<attribute name="PROD_ID" value="CAP-10300"/>
+<attribute name="PROD_ID" value="CAP-08280"/>
 </part>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1uF">
 <attribute name="PROD_ID" value="CAP-00868"/>
