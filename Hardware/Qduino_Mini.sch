@@ -14710,8 +14710,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="38.1" y="119.38" size="1.778" layer="97" align="center">Set for 500mA charging</text>
-<text x="0" y="15.24" size="2.54" layer="97" align="center">USB BUS</text>
+<text x="38.1" y="119.38" size="1.778" layer="97" align="center">Set for 100mA charging</text>
+<text x="12.7" y="15.24" size="2.54" layer="97" align="center">USB BUS
+(USB spec voltages)</text>
 <text x="60.96" y="15.24" size="2.54" layer="97" align="center">Resonator</text>
 <text x="53.34" y="73.66" size="2.54" layer="97" align="center">Status LEDs</text>
 <text x="84.328" y="-39.37" size="2.54" layer="94" ratio="5">&gt;DESIGNER</text>
@@ -14719,7 +14720,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="124.46" y="17.78" size="2.032" layer="97" align="center">3.3V @ 150mA max.</text>
 <text x="129.54" y="66.04" size="1.778" layer="97">SPST</text>
 <text x="-55.88" y="124.46" size="2.54" layer="97" align="center">ATmega32U4
-3.3V @ 16MHz</text>
+VCC = 3.3V &amp; F_OSC = 8MHz</text>
 <wire x1="-20.32" y1="134.62" x2="-20.32" y2="78.74" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="-20.32" y1="78.74" x2="-20.32" y2="27.94" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="-20.32" y1="27.94" x2="-86.36" y2="27.94" width="0.4064" layer="97" style="shortdash"/>
@@ -14753,7 +14754,6 @@ Circuit</text>
 2K  = 500mA</text>
 <text x="-2.54" y="73.66" size="2.54" layer="97" align="center">I2C PULLUPS</text>
 <wire x1="12.7" y1="78.74" x2="12.7" y2="20.32" width="0.4064" layer="97" style="shortdash"/>
-<text x="41.91" y="-13.97" size="1.6764" layer="97">Can only run up to 13.3MHz @ 3V</text>
 <text x="62.23" y="-43.18" size="2.54" layer="94" ratio="5">Revised by: Brent Wilkins</text>
 </plain>
 <instances>
@@ -14802,11 +14802,11 @@ Circuit</text>
 <attribute name="PROD_ID" x="78.74" y="50.8" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R8" gate="G$1" x="63.5" y="93.98" rot="R90"/>
-<instance part="R6" gate="G$1" x="25.4" y="-2.54" rot="R180">
-<attribute name="PROD_ID" x="25.4" y="-2.54" size="1.27" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R7" gate="G$1" x="25.4" y="5.08" rot="R180">
+<instance part="R6" gate="G$1" x="25.4" y="5.08" rot="R180">
 <attribute name="PROD_ID" x="25.4" y="5.08" size="1.27" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="25.4" y="-2.54" rot="R180">
+<attribute name="PROD_ID" x="25.4" y="-2.54" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="38.1" y="38.1" rot="R270">
 <attribute name="PROD_ID" x="38.1" y="38.1" size="1.27" layer="96" rot="R270" display="off"/>
@@ -14878,9 +14878,9 @@ Circuit</text>
 <instance part="P+7" gate="1" x="2.54" y="53.34"/>
 <instance part="FID5" gate="G$1" x="157.48" y="-25.4"/>
 <instance part="FID6" gate="G$1" x="157.48" y="-17.78"/>
-<instance part="GND10" gate="1" x="12.7" y="5.08"/>
-<instance part="JP2" gate="G$1" x="-5.08" y="0" smashed="yes" rot="R180">
-<attribute name="NAME" x="-0.254" y="-8.128" size="1.778" layer="95" rot="R180"/>
+<instance part="GND10" gate="1" x="7.62" y="-10.16"/>
+<instance part="JP2" gate="G$1" x="-2.54" y="0" smashed="yes" rot="MR0">
+<attribute name="NAME" x="2.286" y="8.128" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="GND11" gate="1" x="-15.24" y="-5.08"/>
 <instance part="Y1" gate="G$1" x="60.96" y="7.62"/>
@@ -14893,9 +14893,9 @@ Circuit</text>
 <nets>
 <net name="D-" class="0">
 <segment>
-<wire x1="30.48" y1="-2.54" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<label x="33.02" y="-2.54" size="1.27" layer="95" xref="yes"/>
+<label x="33.02" y="5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="-76.2" y1="76.2" x2="-73.66" y2="76.2" width="0.1524" layer="91"/>
@@ -14905,9 +14905,9 @@ Circuit</text>
 </net>
 <net name="D+" class="0">
 <segment>
-<wire x1="33.02" y1="5.08" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<label x="33.02" y="5.08" size="1.27" layer="95" xref="yes"/>
+<label x="33.02" y="-2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="-73.66" y1="78.74" x2="-76.2" y2="78.74" width="0.1524" layer="91"/>
@@ -14981,15 +14981,13 @@ Circuit</text>
 <pinref part="JP2" gate="G$1" pin="SHIELD"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="-15.24" y1="-2.54" x2="-15.24" y2="0" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="0" x2="-10.16" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="GND"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -15473,7 +15471,9 @@ Circuit</text>
 <net name="UD-" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="5.08" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="D-"/>
 </segment>
 </net>
@@ -15481,9 +15481,9 @@ Circuit</text>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="JP2" gate="G$1" pin="D+"/>
-<wire x1="20.32" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="5.08" x2="17.78" y2="0" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="0" x2="2.54" y2="0" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="0" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -15502,9 +15502,9 @@ Circuit</text>
 </net>
 <net name="VBUS" class="0">
 <segment>
-<label x="10.16" y="-5.08" size="1.27" layer="95" xref="yes"/>
+<label x="10.16" y="5.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="JP2" gate="G$1" pin="VCC"/>
-<wire x1="10.16" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="119.38" y1="63.5" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
