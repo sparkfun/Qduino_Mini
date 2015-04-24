@@ -14755,6 +14755,7 @@ Circuit</text>
 <text x="-2.54" y="73.66" size="2.54" layer="97" align="center">I2C PULLUPS</text>
 <wire x1="12.7" y1="78.74" x2="12.7" y2="20.32" width="0.4064" layer="97" style="shortdash"/>
 <text x="62.23" y="-43.18" size="2.54" layer="94" ratio="5">Revised by: Brent Wilkins</text>
+<text x="124.46" y="86.36" size="1.9304" layer="97" align="center">I2C ADDRESS = 0x36</text>
 </plain>
 <instances>
 <instance part="GND2" gate="1" x="-5.08" y="-40.64"/>
