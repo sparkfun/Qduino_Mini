@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2683,7 +2683,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="IC-12551" x="23.9522" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U4" library="SparkFun-PowerIC" package="SOT23-5" value="TPS78233" x="25.4" y="19.685" rot="R90">
-<attribute name="PROD_ID" value="12550" x="25.4" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="IC-12550" x="25.4" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C9" library="SparkFun-Capacitors" package="0603-CAP" value="2.2uF" x="22.225" y="19.685" rot="R90">
 <attribute name="PROD_ID" value="CAP-07888" x="22.225" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
