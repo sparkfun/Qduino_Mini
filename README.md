@@ -1,3 +1,5 @@
+***NOTE:*** *This product was a Kickstarter product. If you are looking for more up-to-date info and the current version of this board, please check out the [current (Storefront) version](https://github.com/sparkfun/Qduino_Mini_SFE), [Qduino Mini product page](https://www.sparkfun.com/products/13614), or the [Arduino board support and library](https://github.com/sparkfun/Arduino_Boards).*
+
 ![Qduino Mini](https://github.com/MightyQ/Qduino_Mini/blob/master/Image/cover.jpg "Image")
 
 The Qduino Mini is *perfect* to embed in your electronics projects, it's super small, inexpensive, has a battery connector & charger built-in, & a fuel gauge that can tell you when to charge the battery!
